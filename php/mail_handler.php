@@ -41,7 +41,7 @@ function SendEmail($message, $subject, $from, $to) {
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     // Additional headers
-    // $headers .= 'To: ' . $to . "\r\n";
+    $headers .= 'To: ' . $to . "\r\n";
     $headers .= 'From: ' . $from . "\r\n";
 
     mail($to, $subject, $message, $headers);
