@@ -1,7 +1,7 @@
 <?php
 
 // include_once (dirname(dirname(__FILE__)) . '/config.php');
-$email = "rv.rodrigo.viola@gmail.com";
+$email = "rodrigo.viola@zoho.com";
 //Initial response is NULL
 $response = null;
 
