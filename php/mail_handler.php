@@ -18,6 +18,8 @@ if (isset($_POST["action"])) {
                     $message = $_POST["message"];
                     $message .= "<br/><br/>";
 
+                    console.log($from);
+
                     $response = (SendEmail($message, $subject, $from, $email)) ? 'Message Sent' : "Sending Message Failed";
                 } else {
                     $response = "Sending Message Failed";
@@ -50,5 +52,16 @@ function SendEmail($message, $subject, $from, $to) {
     }
     return $isSent;
 }
+
+
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+
 
 ?>

@@ -361,6 +361,7 @@
                 $("#submit").attr('disabled', 'disabled');
                 var post_data = form.serialize();
                 $('div#form-loader').removeClass('is-hidden').fadeIn(500);
+                // console.log(document.getElementById('name').value);
                 $.ajax({
                     type: 'POST',
                     url: 'php/mail_handler.php',
