@@ -682,6 +682,7 @@ body.scale-effect .btn-holder .btn-play {
 #home .header-background {
 	position: relative;
 	display: block;
+	top: -1px;
 	width: 100%;
 	height: 300px;
 	background: var(--backimage);
