@@ -637,6 +637,7 @@ body.scale-effect .btn-holder .btn-play {
 	padding: 4px;
 	color: #fff;
 }
+
 #home #menuToggle .toggle-normal i.scrolled{
 	color: var(--main-color);
 }
@@ -754,7 +755,7 @@ body.scale-effect .btn-holder .btn-play {
 }
 
 #v-card-holder #v-card .infos .profile-list .title i {
-	font-size: 23px;
+	font-size: 20px;
 }
 
 #v-card-holder #v-card .infos .profile-list .title .fab {
