@@ -411,5 +411,15 @@
             delay: 300,
             distance: '0'
         });
+
+
+        $(function () {
+          $(document).scroll(function () {
+        	  var $menuDash = $("#home #menuToggle .toggle-normal i");
+            var $fakedivheight = $(".fakedivheight");
+        	  $menuDash.toggleClass('scrolled', $(this).scrollTop() > $fakedivheight.height());
+        	});
+        });
+
     });
 })(jQuery);

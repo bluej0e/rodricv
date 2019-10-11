@@ -17,6 +17,7 @@
 	--shadow-1: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	--shadow-h: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 	--wave-color: linear-gradient(to top, #0077c2 20%, #42a5f5 80%);
+	--menubox-color: var(--main-color);
 	/* --backimage: url(../img/background4.jpg) no-repeat; */
 }
 
@@ -634,9 +635,14 @@ body.scale-effect .btn-holder .btn-play {
 #home #menuToggle .toggle-normal i {
 	font-size: 31px;
 	padding: 4px;
-	color: var(--secondary-color);
+	color: #fff;
 }
-
+#home #menuToggle .toggle-normal i.scrolled{
+	color: var(--main-color);
+}
+#fakedivheight{
+	height:250px;
+}
 #home #menuToggle .toggle-normal .top-bar {
 	position: absolute;
 	right: 6px;
@@ -768,6 +774,10 @@ body.scale-effect .btn-holder .btn-play {
 	font-weight: 400;
 	line-height: 20px;
 	color: #fff;
+}
+
+#v-card-holder #v-card .infos a{
+	color:#fff!important;
 }
 
 #v-card-holder #v-card .links {
@@ -2763,4 +2773,7 @@ hr {
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
+}
+.skills-title-text{
+	text-align: center;
 }

@@ -92,6 +92,9 @@
     <!--TOGGLE-->
     <link href="./css/toggle.css" rel="stylesheet">
 
+
+    <link href="./css/print.css" rel="stylesheet">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149415841-1"></script>
     <script>
@@ -126,7 +129,7 @@ PRE-LOADER
 HEADER
 ===========================================-->
 <header id="home">
-    <nav id="theMenu" class="menu">
+    <nav id="theMenu" class="menu dontprint">
 
         <!--MENU-->
         <div id="menu-options" class="menu-wrap">
@@ -184,12 +187,12 @@ V-CARD
             <div class="col-md-12 col-sm-12 col-xs-12">
 
                 <!-- V-CARD -->
-                <div id="v-card" class="card">
+                <div id="v-card" class="card vcardcontent">
 
                     <!-- PROFILE PICTURE -->
-                    <div id="profile" class="right">
+                    <div id="profile" class="right pictureofme">
                         <img alt="profile-image" class="img-responsive" src="./img/rodri.jpg">
-                        <div class="slant"></div>
+                        <div class="slant dontprint"></div>
 
                         <!--EMPTY PLUS BUTTON-->
                         <!-- <div class="btn-floating btn-large add-btn"><i class="fas fa-plus"></i></div> -->
@@ -218,11 +221,11 @@ V-CARD
                         <div class="infos">
                             <ul class="profile-list">
                                 <li class="clearfix">
-                                    <span class="title"><i class="fas fa-envelope"></i></span>
+                                    <span class="title"><i class="fas fa-envelope" aria-hidden="true"></i></span>
                                     <span class="content">rv.rodrigo.viola@gmail.com</span>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="title"><i class="fas fa-globe"></i></span>
+                                    <span class="title"><i class="fas fa-globe" aria-hidden="true"></i></span>
                                     <span class="content">1UP.uy</span>
                                 </li>
                                 <li class="clearfix">
@@ -230,18 +233,18 @@ V-CARD
                                     <span class="content">rodrigo.v.c</span>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="title"><i class="fas fa-phone-alt"></i></span>
+                                    <span class="title"><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
                                     <span class="content">+34 605 366 393</span>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="title"><i class="fas fa-map-marker-alt"></i></span>
+                                    <span class="title"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
                                     <span class="content">Carrer del Vallès 85, Barcelona</span>
                                 </li>
                             </ul>
                         </div>
 
                         <!--LINKS-->
-                        <div class="links">
+                        <div class="links dontprint">
                             <!-- FACEBOOK-->
                             <a href="https://www.facebook.com/rodrigo.viola" id="first_one" class="social btn-floating indigo"><i class="fab fa-facebook"></i></a>
                             <!-- LINKEDIN-->
@@ -268,7 +271,7 @@ ABOUT
         <div class="row">
             <div class="col-md-12">
                 <!-- DETAILS -->
-                <div id="about-card" class="card" data-sr-id="49" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; transition: box-shadow 0.25s ease 0s, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; ">
+                <div id="about-card" class="card" data-sr-id="49" style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; transition: box-shadow 0.25s ease 0s, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; ">
                     <div class="card-content">
                         <!-- ABOUT PARAGRAPH -->
                         <p>
@@ -277,7 +280,7 @@ ABOUT
                     </div>
 
                     <!-- BUTTONS -->
-                    <div id="about-btn" class="card-action">
+                    <div id="about-btn" class="card-action dontprint">
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
                             <!-- <a href="#" class="btn waves-effect">Download CV</a> -->
@@ -298,7 +301,7 @@ EDUCATION
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="./img/book.png" alt="demo" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Education</h4>
+            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/book.png" alt="demo" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Education</h4>
         </div>
 
         <div id="timeline-education">
@@ -425,7 +428,7 @@ EDUCATION
           </div>
 
           <!-- 5 TIMELINE -->
-          <div class="timeline-block">
+          <div class="timeline-block dontprint">
                 <!-- DOT -->
                 <div class="timeline-dot" data-sr-id="12" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "><i class="fa fa-laptop-code"></i></div>
                 <!-- TIMELINE CONTENT -->
@@ -458,123 +461,121 @@ SKILLS
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="./img/mixer.png" alt="demo" data-sr-id="14" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Skills</h4>
+            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/mixer.png" alt="demo" data-sr-id="14" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Skills</h4>
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div id="skills-card" class="card" data-sr-id="15" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                     <div class="card-content">
                         <div class="row">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- FIRST SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="text-center">Professional</h6>
+                                    <h6 class="skills-title-text">Professional</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="90%">
                                     <div class="skillbar-title"><span>HTML5</span></div>
-                                    <div class="skillbar-bar" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="53"></div>
-                                    <div class="skill-bar-percent">90%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="53"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
                                     <div class="skillbar-title"><span>CSS3</span></div>
-                                    <div class="skillbar-bar" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="54"></div>
-                                    <div class="skill-bar-percent">90%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="54"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
                                 <div class="skillbar" data-percent="70%">
                                     <div class="skillbar-title"><span>javascript</span></div>
-                                    <div class="skillbar-bar" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="55"></div>
-                                    <div class="skill-bar-percent">70%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="55"></div>
+                                    <div class="skill-bar-percent dontprint">70%</div>
                                 </div>
                                 <!-- FOURTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="60%">
                                     <div class="skillbar-title"><span>React</span></div>
-                                    <div class="skillbar-bar" style="width: 60%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
-                                    <div class="skill-bar-percent">60%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 60%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
+                                    <div class="skill-bar-percent dontprint">60%</div>
                                 </div>
-                                <!-- FOURTH SKILL BAR  -->
+                                <!-- FIFTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="80%">
                                     <div class="skillbar-title"><span>SEO</span></div>
-                                    <div class="skillbar-bar" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
-                                    <div class="skill-bar-percent">80%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
+                                    <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
                             </div>
 
-
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- SECOND SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="text-center">Personal</h6>
+                                    <h6 class="skills-title-text">Personal</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="90%">
                                     <div class="skillbar-title"><span>Communication</span></div>
-                                    <div class="skillbar-bar" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="57"></div>
-                                    <div class="skill-bar-percent">90%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="57"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
                                 <div class="skillbar" data-percent="80%">
                                     <div class="skillbar-title"><span>Teamwork</span></div>
-                                    <div class="skillbar-bar" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="58"></div>
-                                    <div class="skill-bar-percent">80%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="58"></div>
+                                    <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
                                 <div class="skillbar" data-percent="85%">
                                     <div class="skillbar-title"><span>Creativity</span></div>
-                                    <div class="skillbar-bar" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="59"></div>
-                                    <div class="skill-bar-percent">85%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="59"></div>
+                                    <div class="skill-bar-percent dontprint">85%</div>
                                 </div>
                                 <!-- FOURTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
                                     <div class="skillbar-title"><span>Detailed</span></div>
-                                    <div class="skillbar-bar" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
-                                    <div class="skill-bar-percent">90%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
-                                <!-- FOURTH SKILL BAR  -->
+                                <!-- FIFTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="85%">
                                     <div class="skillbar-title"><span>Adaptive</span></div>
-                                    <div class="skillbar-bar" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
-                                    <div class="skill-bar-percent">85%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
+                                    <div class="skill-bar-percent dontprint">85%</div>
                                 </div>
                             </div>
 
-
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- THIRD SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="text-center">Software</h6>
+                                    <h6 class="skills-title-text">Software</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="80%">
                                     <div class="skillbar-title"><span>Illustrator</span></div>
-                                    <div class="skillbar-bar" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="61"></div>
-                                    <div class="skill-bar-percent">80%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="61"></div>
+                                    <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
                                 <div class="skillbar" data-percent="70%">
                                     <div class="skillbar-title"><span>inDesign</span></div>
-                                    <div class="skillbar-bar" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="62"></div>
-                                    <div class="skill-bar-percent">70%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="62"></div>
+                                    <div class="skill-bar-percent dontprint">70%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
                                     <div class="skillbar-title"><span>Photoshop</span></div>
-                                    <div class="skillbar-bar" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="63"></div>
-                                    <div class="skill-bar-percent">90%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="63"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- FOURTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="70%">
                                     <div class="skillbar-title"><span>Git</span></div>
-                                    <div class="skillbar-bar" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
-                                    <div class="skill-bar-percent">70%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
+                                    <div class="skill-bar-percent dontprint">70%</div>
                                 </div>
-                                <!-- FOURTH SKILL BAR  -->
+                                <!-- FIFTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="80%">
                                     <div class="skillbar-title"><span>Adobe XD</span></div>
-                                    <div class="skillbar-bar" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
-                                    <div class="skill-bar-percent">80%</div>
+                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
+                                    <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
                             </div>
                         </div>
@@ -592,7 +593,7 @@ EXPERIENCE
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="./img/layers.png" alt="demo" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Experience</h4>
+            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/layers.png" alt="demo" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Experience</h4>
         </div>
         <div id="timeline-experience">
 
@@ -742,7 +743,7 @@ MODALS
 <!--==========================================
 PORTFOLIOS
 ===========================================-->
-<section id="portfolios" class="section">
+<section id="portfolios" class="section dontprint">
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
@@ -913,7 +914,8 @@ INTEREST
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="./img/heart.png" alt="demo" data-sr-id="29" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Interest</h4>
+            <h4 class="text-uppercase text-center">
+              <img class="dontprint" src="./img/heart.png" alt="demo" data-sr-id="29" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Interest</h4>
         </div>
 
         <div id="interest-card" class="card" data-sr-id="30" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
@@ -929,7 +931,7 @@ INTEREST
             </div>
 
             <!--INTEREST ICONS-->
-            <div class="row no-gutters">
+            <div class="row no-gutters dontprint">
 
                 <!--INTEREST ICON ONE-->
                 <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
@@ -982,7 +984,7 @@ INTEREST
 <!--==========================================
 CONTACT
 ===========================================-->
-<section id="contact" class="section">
+<section id="contact" class="section dontprint">
   <div class="container">
       <!-- SECTION TITLE -->
       <div class="section-title">
@@ -1055,7 +1057,7 @@ FOOTER
 ===========================================-->
 <footer>
     <div class="container">
-        <!--FOOTER DETAILS-->
+        <div style="display:none;" class="fakedivheight"></div>
     </div>
 </footer>
 
