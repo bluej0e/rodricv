@@ -57,7 +57,7 @@ body {
 .section .section-title img {
 	width: 66px;
 	padding: 10px;
-	box-shadow: var(--shadow-1);
+	/* box-shadow: var(--shadow-1); */
 	margin: -2px 12px 12px 12px;
 }
 
