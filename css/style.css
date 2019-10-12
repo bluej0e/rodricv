@@ -1033,7 +1033,8 @@ body.scale-effect .btn-holder .btn-play {
 	text-align: center;
 	font-size: 24px;
 	margin-top: 26%;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+	color: var(--background-color);
+	/* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); */
 }
 
 .timeline-block .timeline-dot h6 {
