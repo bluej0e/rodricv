@@ -119,7 +119,7 @@ PRE-LOADER
             <!-- NAME & STATUS -->
             <div class="text-holder text-center">
                 <h2>Rodrigo Viola</h2>
-                <h6>Digital Marketer &amp; Web Developer</h6>
+                <h6 data-lang='title'></h6>
             </div>
         </div>
     </div>
@@ -141,14 +141,16 @@ HEADER
             <br>
 
             <!--OPTIONS-->
-            <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
-            <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
-            <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
-            <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-            <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
-            <a href="#portfolios"><i class="title-icon fa fa-archive"></i>Portfolios</a>
-            <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
-            <a href="#contact"><i class="title-icon fa fa-envelope"></i>Contact</a>
+            <a href="#home" data-lang="navBar.home"><i class="title-icon fa fa-user"></i> </a>
+            <a href="#about" data-lang="navBar.about"><i class="title-icon fa fa-dashboard"></i> </a>
+            <a href="#education" data-lang="navBar.education"><i class="title-icon fa fa-graduation-cap"></i> </a>
+            <a href="#skills" data-lang="navBar.skills"><i class="title-icon fa fa-sliders"></i> </a>
+            <a href="#experience" data-lang="navBar.experience"><i class="title-icon fa fa-suitcase"></i> </a>
+            <a href="#portfolio" data-lang="navBar.portfolio"><i class="title-icon fa fa-archive"></i> </a>
+            <a href="#interests" data-lang="navBar.interests"><i class="title-icon fa fa-heart"></i> </a>
+            <a href="#contact" data-lang="navBar.contact"><i class="title-icon fa fa-envelope"></i> </a>
+            <a onClick="chosenLang();" class="langBox" lang="en" data-lang='opLang' href="#"><i class="title-icon fa fa-translate"></i> </a>
+
         </div>
 
         <!-- MENU BUTTON -->
@@ -165,13 +167,13 @@ HEADER
     <div class="header-background section">
       <div class="waveWrapper waveAnimation">
         <div class="waveWrapperInner bgTop">
-          <div class="wave waveTop" style="background-image: url('https://rodrigoviola.online/img/wave-top.png')"></div>
+          <div class="wave waveTop" style="background-image: url('/img/wave-top.png')"></div>
         </div>
         <div class="waveWrapperInner bgMiddle">
-          <div class="wave waveMiddle" style="background-image: url('https://rodrigoviola.online/img/wave-mid.png')"></div>
+          <div class="wave waveMiddle" style="background-image: url('/img/wave-mid.png')"></div>
         </div>
         <div class="waveWrapperInner bgBottom">
-          <div class="wave waveBottom" style="background-image: url('https://rodrigoviola.online/img/wave-bot.png')"></div>
+          <div class="wave waveBottom" style="background-image: url('/img/wave-bot.png')"></div>
         </div>
       </div>
     </div>
@@ -214,7 +216,7 @@ V-CARD
                         <!-- NAME & STATUS -->
                         <div class="info-headings">
                             <h4 class="text-uppercase left">Rodrigo Viola</h4>
-                            <h6 class="text-capitalize left">Digital Marker &amp; Web Developer</h6>
+                            <h6 class="text-capitalize left" data-lang="title"></h6>
                         </div>
 
                         <!-- CONTACT INFO -->
@@ -277,18 +279,16 @@ ABOUT
                 <div id="about-card" class="card" data-sr-id="49" style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; transition: box-shadow 0.25s ease 0s, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s; ">
                     <div class="card-content">
                         <!-- ABOUT PARAGRAPH -->
-                        <p>
-                          Hello! I'm Rodrigo, I'm currently based in Montevideo working as a freelancer. I’ve had the opportunity to work with some of the largest iGaming and retail companies in the world. Having an entrepreneurial spirit I run a series of personal projects and am always looking for the next challenge. In my life I've had the chance to live in Canada and Uruguay for many years which enabled me to master both English and Spanish and also study and work in both countries in the fields of client management, marketing and web development. Currently I'm looking for my next challenge.
-                        </p>
+                        <p data-lang="about.main"></p>
                     </div>
 
                     <!-- BUTTONS -->
                     <div id="about-btn" class="card-action dontprint">
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
-                            <a href="https://rodrigoviola.online/download/rodrigo_viola_cv.pdf" target="_blank" class="btn waves-effect">Download CV</a>
+                            <a href="/download/rodrigo_viola_cv.pdf" target="_blank" class="btn waves-effect" data-lang="about.download"></a>
                             <!-- CONTACT BUTTON -->
-                            <a href="#contact" class="btn waves-effect">Contact Me</a>
+                            <a href="#contact" class="btn waves-effect" data-lang="about.contact"></a>
                         </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@ EDUCATION
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/book.png" alt="education" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Education</h4>
+            <img class="dontprint" src="./img/book.png" alt="education" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "><h4 class="text-uppercase text-center" data-lang="education.title"></h4>
         </div>
 
         <div id="timeline-education">
@@ -317,23 +317,18 @@ EDUCATION
               <div class="card timeline-content" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">High School</h6>
+                      <h6 class="timeline-title" data-lang="education.sec1.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="http://aph.hdsb.ca/" target="_blank">Abbey Park HS</a></small>
+                              <small><a href="http://aph.hdsb.ca/" target="_blank" data-lang="education.sec1.small"></a></small>
                           </h6>
                           <h6>
-                              <small>Oakville, Canada</small>
+                              <small data-lang="education.sec1.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                        I completed my high school degree from Abbey Park High School.
-                        I successfully completed all the credits without any fallout.
-                        This is where my professional journey began.
-                      </p>
-
+                      <p data-lang="education.sec1.p"></p>
                   </div>
               </div>
           </div>
@@ -346,25 +341,21 @@ EDUCATION
               <div class="card timeline-content" data-sr-id="7" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Advertising & Design</h6>
+                      <h6 class="timeline-title" data-lang="education.sec2.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="https://www.sheridancollege.ca/" target="_blank">Sheridan College</a></small>
+                              <small><a href="https://www.sheridancollege.ca/" target="_blank" data-lang="education.sec2.small"></a></small>
                           </h6>
                           <h6>
-                              <small>2007 - 2009</small>
+                              <small data-lang="education.sec2.date"></small>
                           </h6>
                           <h6>
-                              <small>Toronto, Canada</small>
+                              <small data-lang="education.sec2.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                        I entered the Advertising and Design program at Sheridan College after high school.
-                        I went into this program with a design perspective, but what it really taught me was how much I like the business side of advertising more than the design.
-                        After two years I decided to focus on the marketing side of things.
-                      </p>
+                      <p data-lang="education.sec2.p"></p>
                   </div>
               </div>
           </div>
@@ -377,23 +368,22 @@ EDUCATION
               <div class="card timeline-content" data-sr-id="9" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Advertising & Marketing Communnications</h6>
+                      <h6 class="timeline-title" data-lang="education.sec3.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="https://www.algonquincollege.com/" target="_blank">Algonquin College</a></small>
+                              <small><a href="https://www.algonquincollege.com/" target="_blank" data-lang="education.sec3.small"></a></small>
                           </h6>
                           <h6>
-                              <small>2009 - 2012</small>
+                              <small data-lang="education.sec3.date"></small>
                           </h6>
                           <h6>
-                              <small>Ottawa, Canada</small>
+                              <small data-lang="education.sec3.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                          Quickly after finishing at Sheridan I enrolled in an Advertising and Marketing Communications program.
-                          Here I was able to focus more on the business side of advertising, as well as learn about different facets of the business world.
+                      <p data-lang="education.sec3.p">
+
                       </p>
                   </div>
               </div>
@@ -407,38 +397,34 @@ EDUCATION
               <div class="card timeline-content" data-sr-id="11" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Marketing Analyst</h6>
+                      <h6 class="timeline-title" data-lang="education.sec4.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="https://www.ort.edu.uy/" target="_blank" >ORT University</a></small>
+                              <small><a href="https://www.ort.edu.uy/" target="_blank" data-lang="education.sec4.small"></a></small>
                           </h6>
                           <h6>
-                              <small>2015 - 2017</small>
+                              <small data-lang="education.sec4.date"></small>
                           </h6>
                           <h6>
-                              <small>Montevideo, Uruguay</small>
+                              <small data-lang="education.sec4.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                          In early 2015 I moved to Montevideo where I took a two year Marketing analysis program.
-                          I used this opportunity to improve my analytical skills, as well as my spanish.
-                          During my time here I focused more on the digital side of marketing.
-                      </p>
+                      <p data-lang="education.sec4.p"></p>
                   </div>
               </div>
           </div>
 
           <!-- 5 TIMELINE -->
-          <div class="timeline-block dontprint">
+          <div class="timeline-block">
                 <!-- DOT -->
                 <div class="timeline-dot" data-sr-id="12" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "><i class="dontprint fa fa-laptop-code"></i></div>
                 <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content" data-sr-id="13" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                     <div class="card-content">
                         <!-- TIMELINE TITLE -->
-                        <h6 class="timeline-title">School of Life</h6>
+                        <h6 class="timeline-title" data-lang="education.sec5.title"></h6>
                         <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <!-- <h6>
@@ -446,9 +432,7 @@ EDUCATION
                             </h6> -->
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
-                        <p>
-                          Currently I am not enrolled in any academic programs, but as we all know it is key to stay up to date with technologies, information and new trends, so I take a lot of digital classes, and am constantly trying to improve myself in any way possible. Lately I have been taking a lot of programming classes to better my web development skills as well as general marketing and design classes.
-                        </p>
+                        <p data-lang="education.sec5.p"></p>
                     </div>
                 </div>
             </div>
@@ -464,7 +448,8 @@ SKILLS
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/mixer.png" alt="skills" data-sr-id="14" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Skills</h4>
+          <img class="dontprint" src="./img/mixer.png" alt="skills" data-sr-id="14" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <h4 class="text-uppercase text-center" data-lang="skills.title"></h4>
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -474,35 +459,35 @@ SKILLS
                             <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- FIRST SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="skills-title-text">Professional</h6>
+                                    <h6 class="skills-title-text" data-lang="skills.col1.t"></h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="90%">
-                                    <div class="skillbar-title"><span>HTML5</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col1.s1"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="53"></div>
                                     <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
-                                    <div class="skillbar-title"><span>CSS3</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col1.s2"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="54"></div>
                                     <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
-                                <div class="skillbar" data-percent="70%">
-                                    <div class="skillbar-title"><span>javascript</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="55"></div>
-                                    <div class="skill-bar-percent dontprint">70%</div>
+                                <div class="skillbar" data-percent="65%">
+                                    <div class="skillbar-title"><span data-lang="skills.col1.s3"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 65%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="55"></div>
+                                    <div class="skill-bar-percent dontprint">65%</div>
                                 </div>
                                 <!-- FOURTH SKILL BAR  -->
-                                <div class="skillbar" data-percent="60%">
-                                    <div class="skillbar-title"><span>React</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 60%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
-                                    <div class="skill-bar-percent dontprint">60%</div>
+                                <div class="skillbar" data-percent="75%">
+                                    <div class="skillbar-title"><span data-lang="skills.col1.s4"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 75%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
+                                    <div class="skill-bar-percent dontprint">75%</div>
                                 </div>
                                 <!-- FIFTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="80%">
-                                    <div class="skillbar-title"><span>SEO</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col1.s5"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="56"></div>
                                     <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
@@ -511,74 +496,74 @@ SKILLS
                             <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- SECOND SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="skills-title-text">Personal</h6>
+                                    <h6 class="skills-title-text" data-lang="skills.col2.t"></h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
-                                <div class="skillbar" data-percent="90%">
-                                    <div class="skillbar-title"><span>Communication</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="57"></div>
-                                    <div class="skill-bar-percent dontprint">90%</div>
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span data-lang="skills.col2.s1"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="57"></div>
+                                    <div class="skill-bar-percent dontprint">85%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
                                 <div class="skillbar" data-percent="80%">
-                                    <div class="skillbar-title"><span>Teamwork</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col2.s2"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="58"></div>
                                     <div class="skill-bar-percent dontprint">80%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
-                                <div class="skillbar" data-percent="85%">
-                                    <div class="skillbar-title"><span>Creativity</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="59"></div>
-                                    <div class="skill-bar-percent dontprint">85%</div>
-                                </div>
-                                <!-- FOURTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
-                                    <div class="skillbar-title"><span>Detailed</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col2.s3"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="59"></div>
                                     <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
+                                <!-- FOURTH SKILL BAR  -->
+                                <div class="skillbar" data-percent="95%">
+                                    <div class="skillbar-title"><span data-lang="skills.col2.s4"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 95%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
+                                    <div class="skill-bar-percent dontprint">95%</div>
+                                </div>
                                 <!-- FIFTH SKILL BAR  -->
-                                <div class="skillbar" data-percent="85%">
-                                    <div class="skillbar-title"><span>Adaptive</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
-                                    <div class="skill-bar-percent dontprint">85%</div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span data-lang="skills.col2.s5"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="60"></div>
+                                    <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                             </div>
 
                             <div class="printskills col-md-4 col-sm-4 col-xs-12">
                                 <!-- THIRD SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="skills-title-text">Software</h6>
+                                    <h6 class="skills-title-text" data-lang="skills.col3.t"></h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
-                                <div class="skillbar" data-percent="80%">
-                                    <div class="skillbar-title"><span>Illustrator</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="61"></div>
-                                    <div class="skill-bar-percent dontprint">80%</div>
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span data-lang="skills.col3.s1"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="61"></div>
+                                    <div class="skill-bar-percent dontprint">85%</div>
                                 </div>
                                 <!-- SECOND SKILL BAR  -->
-                                <div class="skillbar" data-percent="70%">
-                                    <div class="skillbar-title"><span>inDesign</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="62"></div>
-                                    <div class="skill-bar-percent dontprint">70%</div>
+                                <div class="skillbar" data-percent="75%">
+                                    <div class="skillbar-title"><span data-lang="skills.col3.s2"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 75%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="62"></div>
+                                    <div class="skill-bar-percent dontprint">75%</div>
                                 </div>
                                 <!-- THIRD SKILL BAR  -->
                                 <div class="skillbar" data-percent="90%">
-                                    <div class="skillbar-title"><span>Photoshop</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col3.s3"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 90%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="63"></div>
                                     <div class="skill-bar-percent dontprint">90%</div>
                                 </div>
                                 <!-- FOURTH SKILL BAR  -->
                                 <div class="skillbar" data-percent="70%">
-                                    <div class="skillbar-title"><span>Git</span></div>
+                                    <div class="skillbar-title"><span data-lang="skills.col3.s4"></span></div>
                                     <div class="skillbar-bar dontprint" style="width: 70%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
                                     <div class="skill-bar-percent dontprint">70%</div>
                                 </div>
                                 <!-- FIFTH SKILL BAR  -->
-                                <div class="skillbar" data-percent="80%">
-                                    <div class="skillbar-title"><span>Adobe XD</span></div>
-                                    <div class="skillbar-bar dontprint" style="width: 80%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
-                                    <div class="skill-bar-percent dontprint">80%</div>
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span data-lang="skills.col3.s5"></span></div>
+                                    <div class="skillbar-bar dontprint" style="width: 85%;; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; transition: transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s; " data-sr-id="64"></div>
+                                    <div class="skill-bar-percent dontprint">85%</div>
                                 </div>
                             </div>
                         </div>
@@ -596,7 +581,8 @@ EXPERIENCE
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img class="dontprint" src="./img/layers.png" alt="experience" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Experience</h4>
+          <img class="dontprint" src="./img/layers.png" alt="experience" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <h4 class="text-uppercase text-center" data-lang="experience.title"></h4>
         </div>
         <div id="timeline-experience">
 
@@ -608,20 +594,18 @@ EXPERIENCE
               <div class="card timeline-content" data-sr-id="18" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Apple Sales Assosiate</h6>
+                      <h6 class="timeline-title" data-lang="experience.sec1.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="https://www.apple.com" target="_blank">Apple Inc.</a></small>
+                              <small><a href="https://www.apple.com" target="_blank" data-lang="experience.sec1.company"></a></small>
                           </h6>
                           <h6>
-                              <small>Ottawa, Canada</small>
+                              <small data-lang="experience.sec1.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                        In 2012 I started working at Apple in the Ottawa store. I was primarily tasked as a sales person, which taught me some useful customer service skills. I also took part in the maintenance and visuals teams. In 2013 I helped open the second store in Ottawa, where I remained. Apple showed me what it means to be in a positive work environment.
-                      </p>
+                      <p data-lang="experience.sec1.text"></p>
                   </div>
               </div>
           </div>
@@ -634,21 +618,18 @@ EXPERIENCE
               <div class="card timeline-content" data-sr-id="20" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Consultant</h6>
+                      <h6 class="timeline-title" data-lang="experience.sec2.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="https://www.trafilea.com/" target="_blank">Trafilea</a></small>
+                              <small><a href="https://www.trafilea.com/" target="_blank" data-lang="experience.sec2.company"></a></small>
                           </h6>
                           <h6>
-                              <small>Montevideo, Uruguay</small>
+                              <small data-lang="experience.sec2.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                        I worked as a consultant for (at the time) a small digital marketing agency Trafilea. I was tasked with coordinating teams of designers, programmers, and copywriters. As well as innovating and streamlining their customer acquisition process. This is when I became more involved in the production process of digital content.
-                      </p>
-
+                      <p data-lang="experience.sec2.text"></p>
                   </div>
               </div>
           </div>
@@ -661,21 +642,18 @@ EXPERIENCE
               <div class="card timeline-content" data-sr-id="22" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                   <div class="card-content">
                       <!-- TIMELINE TITLE -->
-                      <h6 class="timeline-title">Product Manager</h6>
+                      <h6 class="timeline-title" data-lang="experience.sec3.title"></h6>
                       <!-- TIMELINE TITLE INFO -->
                       <div class="timeline-info">
                           <h6>
-                              <small><a href="http://latamgaming.com/" target="_blank" >LatamGaming</a></small>
+                              <small><a href="http://latamgaming.com/" target="_blank" data-lang="experience.sec3.company"></a></small>
                           </h6>
                           <h6>
-                              <small>Montevideo, Uruguay</small>
+                              <small data-lang="experience.sec3.location"></small>
                           </h6>
                       </div>
                       <!-- TIMELINE PARAGRAPH -->
-                      <p>
-                        For about two years I worked alongside iGaming affiliate network operator LatamGaming where I was tasked with project management, graphic design, SEO/SEM, web development, growth hacking and digital marketing. I oversaw and operated the development of an 80+ website iGaming affiliate network which spanned all of Latin America.
-                      </p>
-
+                      <p data-lang="experience.sec3.text"></p>
                   </div>
               </div>
           </div>
@@ -688,20 +666,18 @@ EXPERIENCE
                 <div class="card timeline-content" data-sr-id="24" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                     <div class="card-content">
                         <!-- TIMELINE TITLE -->
-                        <h6 class="timeline-title">Owner / Freelance</h6>
+                        <h6 class="timeline-title" data-lang="experience.sec4.title"></h6>
                         <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
-                                <small><a href="https://www.1up.uy" target="_blank" >1UP.uy</a></small>
+                                <small><a href="https://www.1up.uy" target="_blank" data-lang="experience.sec4.company"></a></small>
                             </h6>
                             <h6>
-                                <small>Remote Work</small>
+                                <small data-lang="experience.sec4.location"></small>
                             </h6>
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
-                        <p>
-                          For about two years I worked as a freelancer under my personal brand 1UP.uy. I have a series of personal projects that I still operate on the side. During my time operating 1UP.uy I worked with leading iGaming companies in Sweden and Malta doing things such as market research, growth hacking, and the development of new markets. I also did some work with smaller companies which may involve a simple website or logo. In contrast; I’ve also done things like co-organized the Jump! Event in Montevideo, Uruguay.
-                        </p>
+                        <p data-lang="experience.sec4.text"></p>
                     </div>
                 </div>
             </div>
@@ -714,20 +690,18 @@ EXPERIENCE
                 <div class="card timeline-content" data-sr-id="26" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                     <div class="card-content">
                         <!-- TIMELINE TITLE -->
-                        <h6 class="timeline-title">Assosiate / CTO</h6>
+                        <h6 class="timeline-title" data-lang="experience.sec5.title"></h6>
                         <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
-                                <small><a href="https://www.1up.uy" target="_blank" >Global Power Innovation</a></small>
+                                <small><a href="https://www.rankingonline.es" target="_blank" data-lang="experience.sec5.company"></a></small>
                             </h6>
                             <h6>
-                                <small>Barcelona, Spain</small>
+                                <small data-lang="experience.sec5.location"></small>
                             </h6>
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
-                        <p>
-                          For the past two years I worked with an associate. I have a series of personal projects that I still operate on the side. During my time operating 1UP.uy I worked with leading iGaming companies in Sweden and Malta doing things such as market research, growth hacking, and the development of new markets. I also did some work with smaller companies which may involve a simple website or logo. In contrast; I’ve also done things like co-organized the Jump! Event in Montevideo, Uruguay.
-                        </p>
+                        <p data-lang="experience.sec5.text"></p>
                     </div>
                 </div>
             </div>
@@ -776,7 +750,8 @@ PORTFOLIOS
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="./img/post-it.png" alt="portfolios" data-sr-id="25" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Portfolio</h4>
+          <img src="./img/post-it.png" alt="portfolios" data-sr-id="25" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <h4 class="text-uppercase text-center" data-lang="portfolio.title"></h4>
         </div>
         <div id="portfolios-card" class="row" data-sr-id="26" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
 
@@ -831,7 +806,7 @@ PORTFOLIOS
                             <img src="./img/jump2.gif" class="img-responsive" alt="The JUMP! Event">
                             <figcaption>
                                 <h2>
-                                  The <span>JUMP</span> Event
+                                  The <span>JUMP!</span> Event
                                 </h2>
                                 <p style="font-size:2em;">
                                   <i class="fa fa-external-link-alt" aria-hidden="true"></i>
@@ -957,20 +932,14 @@ INTEREST
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center">
-              <img class="dontprint" src="./img/heart.png" alt="about" data-sr-id="29" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Interest</h4>
+          <img class="dontprint" src="./img/heart.png" alt="about" data-sr-id="29" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <h4 class="text-uppercase text-center" data-lang="interests.title"></h4>
         </div>
 
         <div id="interest-card" class="card" data-sr-id="30" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: box-shadow 0.25s ease 0s, -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: box-shadow 0.25s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
             <!--INTEREST TEXT-->
             <div class="card-content">
-                <p>
-                  First of all, I love games.
-                  Be it video games or board games, cooperative games or competitive ones, when it comes to games, I’m usually the first one on board.
-                  I try to spend as much time outside as possible, always on the lookout trying to find a good spot in the city to have a cup of coffee or just relax.
-                  I’m also quite the cinephile, even though I haven't been watching as many movies as I like lately.
-                  I also enjoy traveling and learning about new people and cultures.
-                </p>
+                <p data-lang="interests.p"></p>
             </div>
 
             <!--INTEREST ICONS-->
@@ -980,42 +949,42 @@ INTEREST
                 <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
                     <div class="interest-icon" data-sr-id="31" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                         <i class="fa fa-dungeon"></i>
-                        <span>Exploring</span>
+                        <span data-lang="interests.i1"></span>
                     </div>
                 </div>
                 <!--INTEREST ICON TWO-->
                 <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                     <div class="interest-icon-even" data-sr-id="32" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                         <i class="fa fa-gamepad"></i>
-                        <span>Gaming</span>
+                        <span data-lang="interests.i2"></span>
                     </div>
                 </div>
                 <!--INTEREST ICON THREE-->
                 <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                     <div class="interest-icon" data-sr-id="33" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                         <i class="fa fa-leaf"></i>
-                        <span>Nature</span>
+                        <span data-lang="interests.i3"></span>
                     </div>
                 </div>
                 <!--INTEREST ICON FOUR-->
                 <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                     <div class="interest-icon-even" data-sr-id="34" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                         <i class="fa fa-bicycle"></i>
-                        <span>Biking</span>
+                        <span data-lang="interests.i4"></span>
                     </div>
                 </div>
                 <!--INTEREST ICON FIVE-->
                 <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                     <div class="interest-icon" data-sr-id="35" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                         <i class="fa fa-plane"></i>
-                        <span>Traveling</span>
+                        <span data-lang="interests.i5"></span>
                     </div>
                 </div>
                 <!--INTEREST ICON SIX-->
                 <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                     <div class="interest-icon-even" data-sr-id="36" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-                        <i class="fa fa-film"></i>
-                        <span>Movies</span>
+                        <i class="fa fa-camera-retro"></i>
+                        <span data-lang="interests.i6"></span>
                     </div>
                 </div>
 
@@ -1031,7 +1000,8 @@ CONTACT
   <div class="container">
       <!-- SECTION TITLE -->
       <div class="section-title">
-          <h4 class="text-uppercase text-center"><img src="./img/envelope.png" alt="contact" data-sr-id="46" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">Contact</h4>
+        <img src="./img/envelope.png" alt="contact" data-sr-id="46" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+        <h4 class="text-uppercase text-center" data-lang="contact.title"></h4>
       </div>
       <div class="row">
           <div id="contact-card" class="col-md-5 col-sm-12 col-xs-12" data-sr-id="47" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
@@ -1042,26 +1012,26 @@ CONTACT
                           <!-- NAME -->
                           <div class="input-field">
                               <input id="name" type="text" class="validate" name="name" required="">
-                              <label for="name">Name</label>
+                              <label for="name" data-lang="contact.name"></label>
                           </div>
                           <!--SUBJECT-->
                           <div class="input-field">
                               <input id="subject" type="text" class="validate" name="subject">
-                              <label for="subject">Subject</label>
+                              <label for="subject" data-lang="contact.sub"></label>
                           </div>
                           <!--EMAIL-->
                           <div class="input-field">
                               <input id="email" type="email" class="validate" name="email" required="">
-                              <label for="email">Email</label>
+                              <label for="email" data-lang="contact.email"></label>
                           </div>
                           <!--MESSAGE-->
                           <div class="input-field">
                               <textarea id="message" class="materialize-textarea" name="message" required=""></textarea>
-                              <label for="message">Message</label>
+                              <label for="message" data-lang="contact.msg"></label>
                           </div>
                           <!-- SEND BUTTON -->
                           <div class="contact-send">
-                              <button id="submit" name="contactSubmit" type="submit" value="Submit" class="btn waves-effect">Send
+                              <button id="submit" name="contactSubmit" type="submit" value="Submit" class="btn waves-effect" data-lang="contact.send">
                               </button>
                           </div>
                       </form>
@@ -1107,6 +1077,7 @@ FOOTER
 <!--==========================================
                   SCRIPTS
 ===========================================-->
+<script type='text/javascript' src='js/langs.js'></script>
 <script src="./js/jquery-2.1.3.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/materialize.min.js"></script>

@@ -47,6 +47,8 @@ body {
 
 .section .section-title {
 	margin-bottom: 18px;
+	display: flex;
+	justify-content: center;
 }
 
 .section .section-title .title-icon {
@@ -1104,7 +1106,7 @@ body.scale-effect .btn-holder .btn-play {
 	#timeline-experience::before {
 		left: 50%;
 		margin-left: -2px;
-		height: 68.9%;
+		height: 62%;
 		opacity: 0.4;
 		background: var(--main-color);
 	}
