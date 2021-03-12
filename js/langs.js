@@ -149,7 +149,7 @@ const langEsp = {
     contact: "Contact"
   },
   about: {
-    main: "Hello! I'm Rodrigo, I'm currently based in Montevideo working as a freelancer. I’ve had the opportunity to work with some of the largest iGaming and retail companies in the world. Having an entrepreneurial spirit I run a series of personal projects and am always looking for the next challenge. In my life I've had the chance to live in Canada and Uruguay for many years which enabled me to master both English and Spanish and also study and work in both countries in the fields of client management, marketing and web development. Currently I'm looking for my next challenge.",
+    main: "Hello! I'm Rodrigo, I'm currently based in Montevideo working as a freelancer. I’ve had the opportunity to work with some of the largest iGaming and retail companies in the world. Having an entrepreneurial spirit I run a series of personal projects and am always looking for the next challenge. In my life I've had the chance to live in Canada, Uruguay and Spain for many years which enabled me to master both English and Spanish and also study and work in these countries in the fields of client relations, marketing, advertising and web development. Currently I'm looking for my next challenge.",
     download: "Download CV",
     contact: "Contact Me",
   },
@@ -244,7 +244,7 @@ const langEsp = {
       title: "Assosiate / CTO",
       company: "Power Global Innovation",
       location: "Barcelona, Spain",
-      text: "In late 2019 I teamed up with PGI. Together we worked two projects simultaneously: <i>RankingOnline.es</i> – A 360 digital agency & <i>TallerDelPatinete.es</i> – An eCommerce / distribution website focused in the personal electric mobility market. These projects were spearheaded by a very small team, where in which we all took on many different tasks. In both of these projects I was in charge of developing the digital content. In the agency I was the designer, developer and technical guy. I also had 2-3 interns working with me at all times. I created the sales pitches, the general ideas and directed the designers and developers to achieve the best result for the clients. As for the <i>TallerDelPatinete</i> project, I was in charge of the design, inventory management, SEM, maintenance of the websites and development of the network (amongst many other tasks). In the time we worked on these projects I became very versatile and self sufficient, I learned a lot about how to run a small business, international business and sales. Unfortunately due to the 2020 financial climate in Spain, my associate decided to part from the project. We still run the marketing agency; but as freelancers.",
+      text: "In late 2019 I teamed up with PGI. Together we worked two projects simultaneously: <i>RankingOnline.es</i> – A 360 digital agency & <i>TallerDelPatinete.es</i> – An eCommerce / distribution website focused in the personal electric mobility market. These projects were spearheaded by a very small team, where in which we all took on many different tasks. In both of these projects I was in charge of developing the digital content. In the agency I was the designer, developer and technical guy. I also had 2-3 interns working with me at all times. I created the sales pitches, the general ideas and directed the designers and developers to achieve the best result for the clients. As for the <i>TallerDelPatinete</i> project, I was in charge of the design, inventory management, SEM, maintenance of the websites and development of the network (amongst many other tasks). In the time we worked on these projects I became very versatile and self sufficient, I learned a lot about how to run a small business, international business and sales.",
     },
   },
   portfolio: {
@@ -258,7 +258,7 @@ const langEsp = {
     i3: "Nature",
     i4: "Biking",
     i5: "Traveling",
-    i6: "Movies"
+    i6: "Photography"
   },
   contact:{
     title:"Contact",
