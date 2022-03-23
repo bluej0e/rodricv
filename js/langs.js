@@ -110,6 +110,12 @@ const langEng = {
       location: "Barcelona, Spain",
       text: "In late 2019 I teamed up with PGI. Together we worked two projects simultaneously: <i>RankingOnline.es</i> – A 360 digital agency & <i>TallerDelPatinete.es</i> – An eCommerce / distribution website focused in the personal electric mobility market. These projects were spearheaded by a very small team, where in which we all took on many different tasks. In both of these projects I was in charge of developing the digital content. In the agency I was the designer, developer and technical guy. I also had 2-3 interns working with me at all times. I created the sales pitches, the general ideas and directed the designers and developers to achieve the best result for the clients. As for the <i>TallerDelPatinete</i> project, I was in charge of the design, inventory management, SEM, maintenance of the websites and development of the network (amongst many other tasks). In the time we worked on these projects I became very versatile and self sufficient, I learned a lot about how to run a small business, international business and sales.",
     },
+    sec6: {
+      title: "Marketing Lead",
+      company: "TowerHouse Studio",
+      location: "Montevideo, Uruguay ",
+      text: "In 2021 I joined the team as Marketing Lead at TowerHouse Studio, a software house based in Montevideo.",
+    },
   },
   portfolio: {
     title: "Portfolio",
