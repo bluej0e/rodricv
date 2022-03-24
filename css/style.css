@@ -1101,7 +1101,7 @@ body.scale-effect .btn-holder .btn-play {
 	#timeline-experience::before {
 		left: 50%;
 		margin-left: -2px;
-		height: 63%;
+		height: 85%;
 		opacity: 0.4;
 		background: var(--main-color);
 	}

@@ -114,7 +114,7 @@ const langEng = {
       title: "Marketing Lead",
       company: "TowerHouse Studio",
       location: "Montevideo, Uruguay ",
-      text: "In 2021 I joined the team as Marketing Lead at TowerHouse Studio, a software house based in Montevideo.",
+      text: "In 2021, I joined the team as Marketing Lead at <i>TowerHouse Studio</i>, a software house based in Montevideo. I was responsible for developing and executing the marketing strategy for the company, as well as managing all marketing activities. We were a small but growing company, and I was really excited to be a part of it.",
     },
   },
   portfolio: {
