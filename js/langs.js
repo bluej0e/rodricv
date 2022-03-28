@@ -81,7 +81,7 @@ const langEng = {
   experience: {
     title: "Experience",
     sec1: {
-      title: "Apple Sales Assosiate",
+      title: "Apple Sales Associate",
       company: "Apple Inc.",
       location: "Ottawa, Canada",
       text: "In 2012 I started working at <i>Apple</i> in the Ottawa store. I was primarily tasked as a sales person, which taught me some useful customer service skills. I also took part in the maintenance and visuals teams. In 2013 I helped open the second store in Ottawa, where I remained. <i>Apple</i> showed me what it means to be in a positive work environment.",
@@ -105,7 +105,7 @@ const langEng = {
       text: "For roughly two years I worked as a freelancer under my personal brand <i>1UP.uy</i>. I have a series of personal projects that I still operate on the side. During my time operating <i>1UP</i> I worked with leading iGaming companies in Sweden and Malta doing things such as market research, growth hacking, and the development of new markets. I also did some work with smaller companies which may involve a simple website or logo. In contrast; I’ve also done things like co-organized <i>the Jump! Event</i> in Montevideo, Uruguay.",
     },
     sec5: {
-      title: "Assosiate / CTO",
+      title: "Associate / CTO",
       company: "Power Global Innovation",
       location: "Barcelona, Spain",
       text: "In late 2019 I teamed up with PGI. Together we worked two projects simultaneously: <i>RankingOnline.es</i> – A 360 digital agency & <i>TallerDelPatinete.es</i> – An eCommerce / distribution website focused in the personal electric mobility market. These projects were spearheaded by a very small team, where in which we all took on many different tasks. In both of these projects I was in charge of developing the digital content. In the agency I was the designer, developer and technical guy. I also had 2-3 interns working with me at all times. I created the sales pitches, the general ideas and directed the designers and developers to achieve the best result for the clients. As for the <i>TallerDelPatinete</i> project, I was in charge of the design, inventory management, SEM, maintenance of the websites and development of the network (amongst many other tasks). In the time we worked on these projects I became very versatile and self sufficient, I learned a lot about how to run a small business, international business and sales.",
@@ -223,7 +223,7 @@ const langEsp = {
   experience: {
     title: "Experience",
     sec1: {
-      title: "Apple Sales Assosiate",
+      title: "Apple Sales Associate",
       company: "Apple Inc.",
       location: "Ottawa, Canada",
       text: "In 2012 I started working at <i>Apple</i> in the Ottawa store. I was primarily tasked as a sales person, which taught me some useful customer service skills. I also took part in the maintenance and visuals teams. In 2013 I helped open the second store in Ottawa, where I remained. <i>Apple</i> showed me what it means to be in a positive work environment.",
@@ -247,7 +247,7 @@ const langEsp = {
       text: "For roughly two years I worked as a freelancer under my personal brand <i>1UP.uy</i>. I have a series of personal projects that I still operate on the side. During my time operating <i>1UP</i> I worked with leading iGaming companies in Sweden and Malta doing things such as market research, growth hacking, and the development of new markets. I also did some work with smaller companies which may involve a simple website or logo. In contrast; I’ve also done things like co-organized <i>the Jump! Event</i> in Montevideo, Uruguay.",
     },
     sec5: {
-      title: "Assosiate / CTO",
+      title: "Associate / CTO",
       company: "Power Global Innovation",
       location: "Barcelona, Spain",
       text: "In late 2019 I teamed up with PGI. Together we worked two projects simultaneously: <i>RankingOnline.es</i> – A 360 digital agency & <i>TallerDelPatinete.es</i> – An eCommerce / distribution website focused in the personal electric mobility market. These projects were spearheaded by a very small team, where in which we all took on many different tasks. In both of these projects I was in charge of developing the digital content. In the agency I was the designer, developer and technical guy. I also had 2-3 interns working with me at all times. I created the sales pitches, the general ideas and directed the designers and developers to achieve the best result for the clients. As for the <i>TallerDelPatinete</i> project, I was in charge of the design, inventory management, SEM, maintenance of the websites and development of the network (amongst many other tasks). In the time we worked on these projects I became very versatile and self sufficient, I learned a lot about how to run a small business, international business and sales.",
