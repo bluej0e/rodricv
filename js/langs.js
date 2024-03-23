@@ -1,7 +1,7 @@
 const langEng = {
   lang: "en",
   opLang: "Español",
-  title: "Digital Marketer &amp; Web Developer",
+  title: "Digital Marketer &amp; Growth Hacker",
   navBar: {
     home: "Home",
     about: "About",
@@ -72,7 +72,7 @@ const langEng = {
     col3: {
       t: "Software",
       s1: "Illustrator",
-      s2: "inDesign",
+      s2: "Webflow",
       s3: "Photoshop",
       s4: "Git",
       s5: "Adobe XD"
@@ -120,7 +120,7 @@ const langEng = {
       title: "Marketing Executive",
       company: "Vairix",
       location: "Montevideo, Uruguay",
-      text: "In late 2022, I joined the newly formed marketing team at Vairix as one of four members. I was responsible for overseeing the website, automating processes, tracking data from various sources, constructing data dashboards, creating landing pages and advertisements.",    
+      text: "For nearly a year and a half, I have taken on the role of Marketing Executive at Vairix, a company based in Montevideo. My responsibilities encompass maintaining the company's website, including the creation of new pages, editing existing content, and ensuring overall upkeep. Additionally, I spearhead the development of landing pages and ad campaigns, as well as the implementation of marketing automation strategies. A significant aspect of my work involves formulating and executing the overarching marketing strategy and coordinating all related efforts.</br></br> During my tenure, I have successfully elevated the company's website to new heights and implemented highly effective ad campaigns, thereby establishing a much-needed digital presence for the business. Through these endeavors, I have honed my skills in Google Ads, teamwork, and leadership. Notably, I played a pivotal role in assembling the current marketing team, which did not exist prior to my involvement.",    
     }
   },
   portfolio: {
@@ -149,7 +149,7 @@ const langEng = {
 const langEsp = {
   lang: "es",
   opLang: "English",
-  title: "Marketing Digital &amp; Desarrollo Web",
+  title: "Marketing Digital &amp; Growth Hacking",
   navBar: {
     home: "Inicio",
     about: "Sobre Mi",
@@ -268,7 +268,7 @@ const langEsp = {
       title: "Ejecutivo de Marketing",
       company: "Vairix",
       location: "Montevideo, Uruguay",
-      text: "En finales del 2022, me uní al equipo de mercadeo recién formado en Vairix como uno de los cuatro miembros. Fui responsable de supervisar el sitio web, automatizar procesos, rastrear datos de varias fuentes, construir tableros de datos, crear páginas de destino y anuncios.",    
+      text: "Desde hace casi un año y medio, he asumido el rol de Marketing Executive en Vairix, una empresa con sede en Montevideo. Mis responsabilidades abarcan el mantenimiento del sitio web de la empresa, incluyendo la creación de nuevas páginas, la edición del contenido existente y el aseguramiento del mantenimiento general. Además, lidero el desarrollo de landing pages y campañas publicitarias, así como la implementación de estrategias de automatización de marketing. Un aspecto significativo de mi trabajo implica formular y ejecutar la estrategia de marketing general y coordinar todos los esfuerzos relacionados.</br></br>Durante mi gestión, he logrado elevar el sitio web de la empresa a nuevas alturas e implementar campañas publicitarias altamente efectivas, estableciendo así una presencia digital muy necesaria para el negocio. A través de estos esfuerzos, he perfeccionado mis habilidades en Google Ads, trabajo en equipo y liderazgo. Cabe destacar que desempeñé un papel fundamental en el armado del actual equipo de marketing, el cual no existía antes de mi incorporación.",    
     }
   },
   portfolio: {
