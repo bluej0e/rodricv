@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVP2G42SNN"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME5RNSFY66"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
