@@ -50,3 +50,6 @@ build/
 
 # OS files
 Thumbs.db 
+
+# template
+zindex.html

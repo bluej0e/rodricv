@@ -1,0 +1,1 @@
+// Delete this file since it's no longer needed - functionality moved to Skills component 
