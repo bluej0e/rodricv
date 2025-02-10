@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Viola - AI & Automation Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch">
+        <button class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="lang-switch">
+        <button class="lang-toggle">
+            <i class="fas fa-globe"></i>
+            <span>EN</span>
+        </button>
+    </div>
+    <canvas id="particles"></canvas>
+    <div class="container">
+        <header class="glassmorphism">
+            <div class="profile-section">
+                <div class="profile-content">
+                    <h1>Rodrigo Viola</h1>
+                    <p class="title" data-translate="title">AI & Automation Expert | Digital Marketing Strategist</p>
+                    <p class="subtitle" data-translate="subtitle">Transforming Business Through AI & Automation</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:rv.rodrigo.viola@gmail.com" class="contact-item tag">
+                    <i class="fas fa-envelope"></i> 
+                    <span data-translate="contact.email_address">rv.rodrigo.viola@gmail.com</span>
+                </a>
+                <a href="https://rodrigoviola.online" target="_blank" class="contact-item tag">
+                    <i class="fas fa-globe"></i>
+                    <span data-translate="contact.website">RodrigoViola.online</span>
+                </a>
+                <a href="tel:+59892033302" class="contact-item tag">
+                    <i class="fas fa-phone"></i>
+                    <span data-translate="contact.phone">+598 092 033 302</span>
+                </a>
+                <span class="contact-item tag">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-translate="contact.location">Montevideo, Uruguay</span>
+                </span>
+            </div>
+        </header>
+
+        <section class="about glassmorphism">
+            <h2><i class="fas fa-user-circle"></i> <span data-translate="about.title">About Me</span></h2>
+            <div data-translate="about.content">
+                <p>As a Digital Marketing Strategist and AI Automation Expert, I specialize in bridging the gap between marketing innovation and technical implementation. With a proven track record in developing AI-driven solutions and automation workflows, I've helped global companies streamline their operations and achieve significant growth.</p>
+                <p>My expertise spans digital marketing, web development, and cutting-edge AI technologies, allowing me to create comprehensive solutions that drive real business results. Through my international experience across Canada, Uruguay, and Spain, I've developed a global perspective that enables me to craft culturally-aware, scalable solutions for diverse markets.</p>
+            </div>
+        </section>
+
+        <section class="experience glassmorphism">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="timeline">
+                <div class="job" data-company="vairix">
+                    <h3 data-translate="experience.vairix.company">VAIRIX Software Development</h3>
+                    <p class="company"><span data-translate="role">Marketing Lead</span> | <span data-translate="period">2021 - 2023</span></p>
+                    <p data-translate="description">Spearheaded digital transformation initiatives and implemented AI-driven solutions:</p>
+                    <ul data-translate="achievements">
+                        <li>Developed and deployed AI-powered lead generation systems using OpenAI and custom workflows</li>
+                        <li>Created automated marketing campaigns that increased engagement by 150%</li>
+                        <li>Implemented n8n automation workflows, reducing manual tasks by 70%</li>
+                        <li>Integrated LangChain and AI tools for content optimization</li>
+                    </ul>
+                </div>
+
+                <div class="job" data-company="towerhouse">
+                    <h3>TowerHouse Studio</h3>
+                    <p class="company"><span data-translate="role">Marketing Lead</span> | <span data-translate="period">2021 - 2022</span></p>
+                    <p data-translate="description">Led marketing strategy and digital initiatives:</p>
+                    <ul data-translate="achievements">
+                        <li>Established comprehensive marketing frameworks and KPI tracking systems</li>
+                        <li>Developed and executed data-driven marketing campaigns</li>
+                        <li>Implemented marketing automation tools to streamline operations</li>
+                    </ul>
+                </div>
+
+                <div class="job" data-company="pgi">
+                    <h3 data-translate="experience.pgi.company">Power Global Innovation</h3>
+                    <p class="company"><span data-translate="role">Associate / CTO</span> | <span data-translate="period">2019 - 2021</span></p>
+                    <p data-translate="description">Led technical strategy and development for two major projects:</p>
+                    <ul data-translate="achievements">
+                        <li>RankingOnline.es: Built and scaled a 360° digital agency from ground up</li>
+                        <li>TallerDelPatinete.es: Developed an eCommerce platform with integrated inventory management</li>
+                        <li>Managed technical teams and implemented automation workflows</li>
+                    </ul>
+                </div>
+
+                <div class="job" data-company="latamgaming">
+                    <h3 data-translate="experience.latamgaming.company">LatamGaming</h3>
+                    <p class="company"><span data-translate="role">Product Manager</span> | <span data-translate="period">2017 - 2019</span></p>
+                    <p data-translate="description">Managed large-scale iGaming affiliate network:</p>
+                    <ul data-translate="achievements">
+                        <li>Scaled network to 80+ websites across Latin America</li>
+                        <li>Implemented SEO/SEM strategies achieving 200% growth</li>
+                        <li>Led development teams and marketing initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="automation glassmorphism">
+            <h2><i class="fas fa-robot"></i> <span data-translate="automation.title">Automation & AI Expertise</span></h2>
+            <div class="automation-content">
+                <p data-translate="automation.subtitle">Specialized in building sophisticated automation systems and AI integrations that transform business operations:</p>
+                <div class="tech-categories">
+                    <div class="tech-category ai">
+                        <h4><i class="fas fa-wand-magic-sparkles"></i> <span data-translate="automation.categories.ai.title">AI & LLMs</span></h4>
+                        <div class="tech-tags">
+                            <span class="tag">OpenAI GPT-4</span>
+                            <span class="tag">Claude</span>
+                            <span class="tag">DeepSeek</span>
+                            <span class="tag">LangChain</span>
+                        </div>
+                    </div>
+                    <div class="tech-category automation">
+                        <h4><i class="fas fa-gears"></i> <span data-translate="automation.categories.automation.title">Automation</span></h4>
+                        <div class="tech-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Make.com</span>
+                            <span class="tag">Puppeteer</span>
+                            <span class="tag">Zapier</span>
+                            <span class="tag">Axiom</span>
+                        </div>
+                    </div>
+                    <div class="tech-category development">
+                        <h4><i class="fas fa-code"></i> <span data-translate="automation.categories.development.title">Development</span></h4>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills glassmorphism">
+            <h2><i class="fas fa-chart-line"></i> <span data-translate="skills.title">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 data-translate="skills.professional">Professional</h3>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.digital_marketing">Digital Marketing</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.ai_implementation">AI Implementation</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.marketing_automation">Marketing Automation</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.sem">SEM</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.seo">SEO</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 data-translate="skills.software">Software & Tools</h3>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.adobe_suite">Adobe Creative Suite</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.n8n_make">n8n & Make.com</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.langchain_openai">LangChain & OpenAI</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.git">Git & Version Control</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-name" data-translate="skills.items.analytics">Analytics Tools</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education glassmorphism">
+            <h2><i class="fas fa-graduation-cap"></i> <span data-translate="education.title">Education</span></h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3 data-translate="education.items.0.degree">Marketing Analyst</h3>
+                    <p class="school" data-translate="education.items.0.school">ORT University, Montevideo, Uruguay | 2015 - 2017</p>
+                    <p data-translate="education.items.0.description">Enhanced analytical skills and digital marketing expertise while improving Spanish language proficiency.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Advertising & Marketing Communications</h3>
+                    <p class="school">Algonquin College, Ottawa, Canada | 2009 - 2012</p>
+                    <p>Focused on business aspects of advertising and comprehensive business understanding.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Advertising & Design</h3>
+                    <p class="school">Sheridan College, Toronto, Canada | 2007 - 2009</p>
+                    <p>Developed foundation in design principles and discovered passion for business side of advertising.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests glassmorphism">
+            <h2><i class="fas fa-heart"></i> <span data-translate="interests.title">Interests & Activities</span></h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span data-translate="interests.items.0.title">Gaming</span>
+                    <p class="interest-detail" data-translate="interests.items.0.detail">Strategy, RPGs & Board Games</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-mountain"></i>
+                    <span>Urban Exploration</span>
+                    <p class="interest-detail">City Discovery & Hidden Gems</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-campground"></i>
+                    <span>Camping</span>
+                    <p class="interest-detail">Nature & Adventure</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-bicycle"></i>
+                    <span>Cycling</span>
+                    <p class="interest-detail">Urban & Trail Exploration</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-coffee"></i>
+                    <span>Café Culture</span>
+                    <p class="interest-detail">Work Spaces & Coffee Tasting</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-book"></i>
+                    <span>Reading</span>
+                    <p class="interest-detail">Tech, Sci-Fi & Philosophy</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Tech Exploration</span>
+                    <p class="interest-detail">AI & Automation Projects</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Beach</span>
+                    <p class="interest-detail">Relaxation & Water Sports</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-film"></i>
+                    <span>Cinema</span>
+                    <p class="interest-detail">Sci-Fi & Psychological Thrillers</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Travel</span>
+                    <p class="interest-detail">Cultural Immersion & Discovery</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Mindfulness</span>
+                    <p class="interest-detail">Yoga & Meditation</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Entrepreneurship</span>
+                    <p class="interest-detail">Side Projects & Startups</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="floating-contact">
+        <button class="contact-trigger">
+            <i class="fas fa-comments"></i>
+            <span data-translate="contact.button">Contact Me</span>
+        </button>
+        <div class="contact-options">
+            <a href="mailto:rv.rodrigo.viola@gmail.com" class="contact-option email">
+                <i class="fas fa-envelope"></i>
+                <span data-translate="contact.email">Email</span>
+            </a>
+            <a href="tel:+59892033302" class="contact-option phone">
+                <i class="fas fa-phone"></i>
+                <span data-translate="contact.call">Call</span>
+            </a>
+            <a href="https://wa.me/59892033302" target="_blank" class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span data-translate="contact.whatsapp">WhatsApp</span>
+            </a>
+            <a href="https://t.me/ro_mvd" target="_blank" class="contact-option telegram">
+                <i class="fab fa-telegram"></i>
+                <span data-translate="contact.telegram">Telegram</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    let hue = 220; // Blue-ish starting color
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const mouse = {
+        x: undefined,
+        y: undefined,
+        radius: 150
+    }
+
+    window.addEventListener('mousemove', (event) => {
+        mouse.x = event.x;
+        mouse.y = event.y;
+    });
+
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 0.1;
+            this.speedX = Math.random() * 1 - 0.8;
+            this.speedY = Math.random() * 1 - 0.8;
+            this.color = `hsl(${hue}, 100%, 50%)`;
+        }
+
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+
+            if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
+            if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
+
+            // Mouse interaction
+            const dx = mouse.x - this.x;
+            const dy = mouse.y - this.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < mouse.radius) {
+                const force = (mouse.radius - distance) / mouse.radius;
+                this.speedX -= dx * force * 0.01;
+                this.speedY -= dy * force * 0.01;
+            }
+        }
+
+        draw() {
+            ctx.fillStyle = this.color;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    function init() {
+        particlesArray = [];
+        const numberOfParticles = (canvas.width * canvas.height) / 9000;
+        for (let i = 0; i < numberOfParticles; i++) {
+            particlesArray.push(new Particle());
+        }
+    }
+
+    function connect() {
+        const maxDistance = 100;
+        for (let a = 0; a < particlesArray.length; a++) {
+            for (let b = a; b < particlesArray.length; b++) {
+                const dx = particlesArray[a].x - particlesArray[b].x;
+                const dy = particlesArray[a].y - particlesArray[b].y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < maxDistance) {
+                    const opacity = 1 - (distance / maxDistance);
+                    ctx.strokeStyle = `hsla(${hue}, 100%, 50%, ${opacity})`;
+                    ctx.lineWidth = 0.2;
+                    ctx.beginPath();
+                    ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < particlesArray.length; i++) {
+            particlesArray[i].update();
+            particlesArray[i].draw();
+        }
+        connect();
+        hue += 0.1;
+        requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        init();
+    });
+
+    init();
+    animate();
+    </script>
+    <script src="theme.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html> 
