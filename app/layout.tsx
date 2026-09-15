@@ -1,42 +1,30 @@
-import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Rodrigo Viola - AI & Automation Expert',
-  description: 'Portfolio showcasing AI & Automation expertise',
+export const metadata: Metadata = {
+  metadataBase: new URL('https://rodrigo-viola.netlify.app'),
+  title: 'Rodrigo Viola — GTM Engineer',
+  description:
+    'I build the systems that replace manual go-to-market work: outbound engines, enrichment layers, and the email infrastructure underneath them.',
+  openGraph: {
+    title: 'Rodrigo Viola — GTM Engineer',
+    description: 'Outbound engines, enrichment layers, and email infrastructure.',
+    type: 'profile',
+  },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME5RNSFY66"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ME5RNSFY66');
-            `
-          }}
-        />
-        <link 
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
         />
       </head>
-      <body className={inter.className} style={{ margin: 0, padding: 0 }}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
-} 
+}
