@@ -1,38 +1,27 @@
-import { profile, pipeline } from '../../lib/content'
+import { profile, summary } from '../../lib/content'
 
 export default function Hero() {
   return (
-    <header className="hero">
+    <header className="cvhead">
       <div className="wrap">
-        <p className="hero__name">{profile.name}</p>
-        <h1 className="hero__role">{profile.role}</h1>
-        <p className="hero__positioning">{profile.positioning}</p>
+        <h1 className="cvhead__name">{profile.name}</h1>
+        <p className="cvhead__role">{profile.role}</p>
 
-        <div
-          className="pipeline"
-          role="img"
-          aria-label="Outbound engine stages: job posting, prefilter, classify, find contacts, enrich, send"
-        >
-          {pipeline.map((step, i) => (
-            <div className="pipeline__step" key={step.stage}>
-              <span className="pipeline__stage">{step.stage}</span>
-              <span className="pipeline__note">{step.note}</span>
-              {i < pipeline.length - 1 && <span className="pipeline__rule" aria-hidden="true" />}
-            </div>
-          ))}
-        </div>
-        <p className="pipeline__caption">One system I owned end to end. Details below.</p>
-
-        <div className="hero__meta">
-          <span>{profile.location}</span>
-          <span>{profile.citizenship}</span>
-        </div>
-
-        <div className="hero__links">
+        <p className="cvhead__contact">
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
-        </div>
+          <span className="sep" aria-hidden="true">·</span>
+          <a href={profile.linkedin} target="_blank" rel="noreferrer">linkedin.com/in/rodrigoviola</a>
+          <span className="sep" aria-hidden="true">·</span>
+          <a href={profile.github} target="_blank" rel="noreferrer">github.com/bluej0e</a>
+        </p>
+        <p className="cvhead__where">
+          {profile.location}
+          <span className="sep" aria-hidden="true">·</span>
+          {profile.citizenship}
+        </p>
+
+        <h2 className="section__title cvhead__sumtitle">Summary</h2>
+        <p className="cvhead__summary">{summary}</p>
       </div>
     </header>
   )
