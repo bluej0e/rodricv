@@ -11,9 +11,6 @@ export const profile = {
 export const summary =
   'I build the systems that replace manual go-to-market work. Most recently I ran revenue operations at a recruiting company placing remote talent with companies in the US and Canada, where I owned the outbound engine, the enrichment layer and the email infrastructure across five brands. Before that, six years in growth and marketing operations — which is why the systems I build get used instead of shelved.'
 
-/** Shown as a single line inside the TalentStream entry. */
-export const pipelineLine =
-  'job posting → prefilter → classify → find contacts → enrich → send'
 
 export const experience = [
   {
@@ -23,7 +20,6 @@ export const experience = [
     place: 'Remote',
     description:
       'Sole revenue operations owner for a recruiting company placing remote talent with companies in the US and Canada. Owned outbound, enrichment and email infrastructure across five brands.',
-    showPipeline: true,
     work: [
       'Built the outbound engine end to end, from webhook intake through campaign push, with eight campaign lists running off one orchestration table',
       'Built the enrichment layer on Clay and Supabase: a read-through cache in front of a five-provider waterfall, with async submit/callback pairs in n8n',

@@ -1,4 +1,4 @@
-import { experience, pipelineLine } from '../../lib/content'
+import { experience } from '../../lib/content'
 
 export default function Experience() {
   return (
@@ -18,7 +18,6 @@ export default function Experience() {
                 </p>
               </div>
               <p className="job__description">{job.description}</p>
-              {job.showPipeline && <p className="job__pipeline">{pipelineLine}</p>}
               <ul className="job__work">
                 {job.work.map((line) => (
                   <li key={line}>{line}</li>
