@@ -93,16 +93,19 @@ export const experience = [
 export const systems = [
   {
     title: 'Outbound engine',
+    slug: 'campaign-desk',
     summary:
       'Job postings arrive by webhook, get prefiltered and classified, contacts are found and enriched, campaigns go out. Eight campaign lists ran off one shared orchestration table.',
   },
   {
     title: 'Enrichment layer',
+    slug: 'enrichment-ops',
     summary:
       'A read-through cache in Supabase in front of a five-provider waterfall in Clay. Providers sequenced by hit rate and cost; repeat lookups on cached profiles cost nothing.',
   },
   {
     title: 'Email infrastructure',
+    slug: 'email-ops',
     summary:
       'Sending and warm-up consolidated onto one stack across five brands. DNS records, domain warm-up, bounce rates, blacklist remediation, and reply routing by sentiment.',
   },

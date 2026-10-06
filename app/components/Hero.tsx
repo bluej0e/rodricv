@@ -15,9 +15,9 @@ export default function Hero() {
           <a href={profile.github} target="_blank" rel="noreferrer">github.com/bluej0e</a>
         </p>
         <p className="cvhead__where">
-          {profile.location}
+          <span>{profile.location}</span>
           <span className="sep" aria-hidden="true">·</span>
-          {profile.citizenship}
+          <span>{profile.citizenship}</span>
         </p>
 
         <h2 className="section__title cvhead__sumtitle">Summary</h2>
