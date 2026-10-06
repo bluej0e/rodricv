@@ -91,6 +91,32 @@ img { max-width: 100%; display: block; }
 .row dd { margin: 0; font-size: .96rem; }
 .plain { margin: 0; }
 
+
+/* Header actions */
+.hero__actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0 0; }
+.hero__actions .button { margin-top: 0; }
+.button.button--ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
+.button.button--ghost:hover { background: var(--paper-2); color: var(--ink); }
+.print-only, .print-foot { display: none; }
+
+/* Earlier roles */
+.subhead { margin: 2.5rem 0 .9rem; font-family: var(--mono); font-weight: 400; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.earlier { list-style: none; margin: 0; padding: 0; }
+.earlier__item { display: grid; grid-template-columns: 10rem 1fr; gap: 1.25rem; padding: .7rem 0; border-top: 1px dashed var(--rule); break-inside: avoid; }
+.earlier__when { margin: 0; font-family: var(--mono); font-size: .74rem; color: var(--muted); padding-top: .3em; white-space: nowrap; }
+.earlier__role { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 1.08rem; }
+.earlier__place { font-family: var(--sans); font-weight: 400; font-size: .86rem; color: var(--muted); }
+.earlier__line { margin: .15rem 0 0; font-size: .94rem; color: var(--ink-2); }
+
+/* Selected work */
+.note { margin: -.5rem 0 1.25rem; font-size: .92rem; color: var(--muted); }
+.works { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem 2rem; }
+.works__item { break-inside: avoid; }
+.works__name { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 1.15rem; }
+.works__kicker { display: block; font-family: var(--mono); font-weight: 400; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--clay); margin-top: .1rem; }
+.works__line { margin: .3rem 0 0; font-size: .93rem; color: var(--ink-2); }
+.works__url { display: inline-block; margin-top: .3rem; font-family: var(--mono); font-size: .74rem; }
+
 /* Work: toolkit */
 .toolkit { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1.25rem 3rem; align-items: end; padding: 2rem; background: var(--ink); color: var(--card); border-radius: 14px; }
 .toolkit .eyebrow { color: #a9a294; }
@@ -151,7 +177,8 @@ img { max-width: 100%; display: block; }
   .halftone { display: none; }
   .hero__lede { font-size: 1.15rem; }
   .contact { flex-direction: column; gap: .3rem; }
-  .row { grid-template-columns: 1fr; gap: .1rem; }
+  .row, .earlier__item { grid-template-columns: 1fr; gap: .1rem; }
+  .works { grid-template-columns: 1fr; }
   .section__head { flex-wrap: wrap; }
   .toolkit { padding: 1.4rem; border-radius: 12px; }
   .tool__name { font-size: 1.9rem; }
@@ -159,22 +186,50 @@ img { max-width: 100%; display: block; }
 }
 
 @media print {
-  html, body { background: #fff; }
-  body { font-size: 10.5pt; line-height: 1.4; background-image: none; }
-  .nav, .halftone, .closing, .system__more, .link-arrow { display: none !important; }
-  .wrap { max-width: none; padding: 0; }
+  /* The PDF: same type and accents on white, two A4 pages. */
+  @page { size: A4; margin: 13mm 15mm 13mm; }
+  html, body { background: #fff !important; }
+  body { font-size: 9.6pt; line-height: 1.42; background-image: none; color: #1a1915; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .nav, .halftone, .closing, .hero__actions, .link-arrow, .eyebrow { display: none !important; }
+  .print-only { display: list-item; }
+  .wrap, .wrap--wide { max-width: none; padding: 0; }
+  a { text-decoration: none; color: inherit; }
   .hero { padding: 0; }
-  .hero__title { font-size: 26pt; }
-  .hero__lede { font-size: 11pt; margin-top: 10pt; }
-  .section { padding-top: 12pt; }
-  .section__head { margin-bottom: 6pt; padding-top: 4pt; }
+  .hero__grid { display: block; }
+  .hero__title { font-size: 25pt; letter-spacing: -.02em; }
+  .hero__role { margin-top: 3pt; font-size: 12pt; }
+  .contact { margin: 7pt 0 3pt; gap: 1pt 12pt; font-size: 8pt; }
+  .contact a { color: var(--clay-ink); }
+  .hero__where { margin-top: 1pt; font-size: 8.6pt; }
+  .hero__lede { margin-top: 9pt; font-size: 10.6pt; line-height: 1.45; max-width: none; }
+  .section { padding-top: 11pt; }
+  .section__head { margin-bottom: 6pt; padding-top: 5pt; }
   .section__title { font-size: 13pt; }
-  .jobs { gap: 10pt; }
-  .job__role { font-size: 11.5pt; }
-  .ticks li { margin-bottom: 1pt; font-size: 10pt; }
-  .ticks li::before { background: #000; }
-  a { text-decoration: none; color: #000; }
-  @page { margin: 14mm; }
+  .section__n { font-size: 7pt; }
+  .jobs { gap: 9pt; }
+  .job__when { font-size: 7.6pt; }
+  .job__role { margin-top: 1pt; font-size: 11.4pt; }
+  .job__description { margin-top: 2pt; font-size: 9.4pt; }
+  .ticks { margin-top: 4pt; }
+  .ticks li { margin-bottom: 1.6pt; padding-left: 10pt; font-size: 9.2pt; line-height: 1.38; }
+  .ticks li::before { top: .55em; width: 3.6pt; height: 3.6pt; }
+  .subhead { margin: 10pt 0 3pt; font-size: 7pt; }
+  .earlier__item { grid-template-columns: 32mm 1fr; gap: 6pt; padding: 3.5pt 0; }
+  .earlier__when { font-size: 7.4pt; padding-top: 1.5pt; }
+  .earlier__role { font-size: 9.8pt; }
+  .earlier__place { font-size: 8pt; }
+  .earlier__line { font-size: 8.9pt; margin-top: 0; }
+  .note { margin: -2pt 0 6pt; font-size: 8.6pt; }
+  .works { gap: 7pt 14pt; }
+  .works__name { font-size: 10pt; }
+  .works__kicker { font-size: 6.6pt; }
+  .works__line { margin-top: 1pt; font-size: 8.8pt; line-height: 1.35; }
+  .works__url { margin-top: 1pt; font-size: 7.6pt; color: var(--clay-ink); }
+  .row { grid-template-columns: 32mm 1fr; gap: 6pt; padding: 2.5pt 0; }
+  .print-foot { display: block !important; margin-top: 16pt; padding-top: 6pt; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 7.6pt; color: var(--muted); }
+  .row dt { font-size: 7.4pt; padding-top: 1.5pt; }
+  .row dd { font-size: 9pt; }
+  #experience { break-after: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

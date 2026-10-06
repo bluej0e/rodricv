@@ -14,6 +14,7 @@ export default function Page() {
       <Experience />
       <Systems />
       <Stack />
+      <p className="wrap print-foot">rv.rodrigo.viola@gmail.com · rodrigo-viola.netlify.app · Live demos of my work at rodrigo-viola.netlify.app/work</p>
       <Closing />
     </main>
     </>

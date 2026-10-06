@@ -11,13 +11,13 @@ export interface Tool {
 }
 
 export const workIntro =
-  'Internal tools I designed and built in revenue operations roles at past companies. Each one is rebuilt here as a live demo: the real interface, running on sample data. Click into any of them.'
+  'Internal tools I built in revenue operations roles at past companies. Each one runs here as a live demo with sample data, so you can click around the real thing.'
 
 export const toolkit = {
   name: 'RevOps Toolkit',
   url: 'https://revops-toolkit-demo.netlify.app',
   summary:
-    'Three tools that run outbound end to end. Campaign Ops plans a campaign and finds the people, Enrichment Ops gets their contact details through a provider waterfall, the campaign sends through Smartlead, and Email Ops keeps every sending domain and mailbox healthy.',
+    'Three tools that run outbound from start to finish. Campaign Ops plans the campaign and finds the people, Enrichment Ops gets their contact details, the emails go out through Smartlead, and Email Ops keeps the sending domains and mailboxes healthy.',
   flow: ['Campaign Ops', 'Enrichment Ops', 'Smartlead', 'Email Ops'],
 }
 
@@ -25,13 +25,13 @@ export const tools: Tool[] = [
   {
     slug: 'campaign-ops',
     name: 'Campaign Ops',
-    kicker: 'Agentic campaign desk',
+    kicker: 'Outbound campaigns',
     summary:
-      'Where outbound campaigns are planned, launched and judged. Claude does the work through versioned skills, from the plan to the search, copy, reply reading and draft answers; the desk shows state and holds the few decisions a person makes.',
+      'Where we planned, launched and tracked every outbound campaign. Claude does the heavy lifting (the plan, the prospect search, the copy, reading replies and drafting answers) and the team approves each step.',
     points: [
-      'Skills return JSON validated against a schema; an answer that does not validate is rejected, not repaired',
-      'The same backend serves the web desk and Claude Code over MCP, so both refuse the same things',
-      'Spend is quoted before it happens, and the scale-or-kill verdict is computed from the campaign’s own rules, never generated',
+      'Shows what a campaign will cost before anything is spent',
+      'Works the same from the web app or from Claude Code',
+      'Decides scale or kill from each campaign’s own targets, and leaves the final call to a person',
     ],
     stack: ['Next.js 16', 'React 19', 'TypeScript', 'Supabase', 'Claude', 'MCP', 'Smartlead', 'HubSpot'],
     url: 'https://campaign-ops-demo.netlify.app/campaigns',
@@ -41,13 +41,13 @@ export const tools: Tool[] = [
   {
     slug: 'enrichment-ops',
     name: 'Enrichment Ops',
-    kicker: 'Provider waterfall API',
+    kicker: 'Contact enrichment',
     summary:
-      'Three enrichment APIs (personal email, work email, mobile phone) on one waterfall. A person is checked against our own cache first, then providers are tried in order of cost and hit rate until one answer passes the rules. Every attempt is logged with what it cost.',
+      'An API that finds personal emails, work emails and phone numbers. It checks our own data first, then tries paid providers one by one, cheapest first, and logs what every lookup cost.',
     points: [
-      'Cache keyed on a normalised LinkedIn profile, so URL variants stop paying for the same person twice',
-      'Fails closed: a work address can never come back from the personal-email service',
-      'Per-provider hit rate, latency and cost per answer, from one attempts table shared by all three services',
+      'Never pays twice for the same person',
+      'Never returns a work address when you asked for a personal one',
+      'Shows which providers are worth what they charge',
     ],
     stack: ['n8n', 'TypeScript', 'Supabase', 'Postgres', 'Next.js', 'Clay'],
     url: 'https://enrichment-ops-demo.netlify.app',
@@ -57,13 +57,13 @@ export const tools: Tool[] = [
   {
     slug: 'email-ops',
     name: 'Email Ops',
-    kicker: 'Deliverability control plane',
+    kicker: 'Email infrastructure',
     summary:
-      'One registry for every sending domain and mailbox across the mailbox providers, the sequencer and DNS. It reconciles them, checks health on a schedule, and gives each domain a computed "ready to send" verdict with the evidence behind it.',
+      'Every sending domain and mailbox in one place, across the mailbox providers, Smartlead and DNS. It checks their health daily and tells you which domains are ready to send and why.',
     points: [
-      'Joining vendors on the email address surfaces what none of them shows alone: paid-for mailboxes not sending, senders with no source, broken connections',
-      'DNS fixes are previewed and applied through Cloudflare only after approval',
-      'An embedded assistant and an MCP server read through the same functions as the pages',
+      'Catches what each vendor misses on its own, like paid mailboxes that never send',
+      'Fixes DNS records in Cloudflare after you approve the change',
+      'Built-in assistant that answers questions about the fleet',
     ],
     stack: ['Next.js', 'TypeScript', 'Supabase', 'Cloudflare API', 'Claude', 'MCP'],
     url: 'https://email-ops-demo.netlify.app',
@@ -78,7 +78,7 @@ export const oneOffs: Tool[] = [
     name: 'Agent Chat',
     kicker: 'AI agent monitoring',
     summary:
-      'A WhatsApp-style view of every conversation a recruiting AI agent has with customers, across Slack, phone calls and email. The team rates replies in place, and the ratings flow back to the agent’s evaluation datasets.',
+      'Every conversation our AI recruiting agent had with clients, across Slack, phone calls and email, in one chat view. The team rates its replies, and the ratings feed back into how the agent is evaluated.',
     points: [],
     stack: ['Next.js', 'Postgres', 'Slack API', 'LangSmith', 'Web Push'],
     url: 'https://agent-chat-demo.netlify.app',
@@ -88,9 +88,9 @@ export const oneOffs: Tool[] = [
   {
     slug: 'cost-dashboard',
     name: 'Cost Dashboard',
-    kicker: 'API and SaaS spend',
+    kicker: 'Vendor spend',
     summary:
-      'Spend across about twenty AI, enrichment and automation vendors, each billed differently. Daily n8n jobs pull tokens, credit balances and executions into one append-only ledger, reconciled against the monthly invoices.',
+      'What we spent across about twenty AI, data and automation vendors, each billed differently. It pulls usage every day and checks it against the monthly invoices.',
     points: [],
     stack: ['n8n', 'Supabase', 'Next.js', 'SVG charts'],
     url: 'https://cost-dashboard-demo.netlify.app',

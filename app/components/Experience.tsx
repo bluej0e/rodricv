@@ -1,4 +1,4 @@
-import { experience } from '../../lib/content'
+import { earlier, experience } from '../../lib/content'
 import Section from './Section'
 
 export default function Experience() {
@@ -13,6 +13,18 @@ export default function Experience() {
             <ul className="ticks">
               {job.work.map((line) => <li key={line}>{line}</li>)}
             </ul>
+          </li>
+        ))}
+      </ol>
+      <h3 className="subhead">Earlier</h3>
+      <ol className="earlier">
+        {earlier.map((e) => (
+          <li className="earlier__item" key={e.company}>
+            <p className="earlier__when">{e.period}</p>
+            <div>
+              <p className="earlier__role">{e.role}, <span className="job__company">{e.company}</span> <span className="earlier__place">· {e.place}</span></p>
+              <p className="earlier__line">{e.line}</p>
+            </div>
           </li>
         ))}
       </ol>

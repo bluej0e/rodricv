@@ -14,7 +14,7 @@ export default function Stack() {
           ))}
         </dl>
       </Section>
-      <Section n="04" title="Education" id="education">
+      <Section n="04" title="Education and languages" id="education">
         <dl className="rows">
           {education.map((e) => (
             <div className="row" key={e.school}>
@@ -22,10 +22,11 @@ export default function Stack() {
               <dd>{e.degree}, {e.school}</dd>
             </div>
           ))}
+          <div className="row">
+            <dt>Languages</dt>
+            <dd>{languages}</dd>
+          </div>
         </dl>
-      </Section>
-      <Section n="05" title="Languages" id="languages">
-        <p className="plain">{languages}</p>
       </Section>
     </>
   )
