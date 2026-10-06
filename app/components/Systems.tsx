@@ -1,21 +1,23 @@
 import Link from 'next/link'
 import { systems } from '../../lib/content'
+import { tools } from '../../lib/work'
+import Section from './Section'
 
 export default function Systems() {
   return (
-    <section className="section" id="systems">
-      <div className="wrap">
-        <h2 className="section__title">Selected systems <Link href="/work/" className="section__aside">all work →</Link></h2>
-        <ul className="systems">
-          {systems.map((s) => (
+    <Section n="02" title="Selected systems" id="systems" aside={<Link href="/work/" className="link-arrow">See them live →</Link>}>
+      <ul className="systems">
+        {systems.map((s) => {
+          const tool = tools.find((t) => t.slug === s.slug)
+          return (
             <li className="system" key={s.title}>
               <h3 className="system__title">{s.title}</h3>
               <p className="system__summary">{s.summary}</p>
-              <p className="system__more"><Link href={`/work/${s.slug}/`}>Case study and live demo →</Link></p>
+              {tool && <a className="system__more" href={tool.url} target="_blank" rel="noreferrer">{tool.name} demo ↗</a>}
             </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+          )
+        })}
+      </ul>
+    </Section>
   )
 }

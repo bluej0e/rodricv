@@ -93,7 +93,7 @@ export const experience = [
 export const systems = [
   {
     title: 'Outbound engine',
-    slug: 'campaign-desk',
+    slug: 'campaign-ops',
     summary:
       'Job postings arrive by webhook, get prefiltered and classified, contacts are found and enriched, campaigns go out. Eight campaign lists ran off one shared orchestration table.',
   },

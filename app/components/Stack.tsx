@@ -1,34 +1,32 @@
 import { skills, education, languages } from '../../lib/content'
+import Section from './Section'
 
 export default function Stack() {
   return (
-    <section className="section" id="skills">
-      <div className="wrap">
-        <h2 className="section__title">Skills</h2>
-        <dl className="stack">
+    <>
+      <Section n="03" title="Skills" id="skills">
+        <dl className="rows">
           {skills.map((g) => (
-            <div className="stack__row" key={g.group}>
+            <div className="row" key={g.group}>
               <dt>{g.group}</dt>
               <dd>{g.items.join(', ')}</dd>
             </div>
           ))}
         </dl>
-
-        <h2 className="section__title section__title--second">Education</h2>
-        <dl className="stack">
+      </Section>
+      <Section n="04" title="Education" id="education">
+        <dl className="rows">
           {education.map((e) => (
-            <div className="stack__row" key={e.school}>
+            <div className="row" key={e.school}>
               <dt>{e.period}</dt>
-              <dd>
-                {e.degree}, {e.school}
-              </dd>
+              <dd>{e.degree}, {e.school}</dd>
             </div>
           ))}
         </dl>
-
-        <h2 className="section__title section__title--second">Languages</h2>
-        <p className="languages">{languages}</p>
-      </div>
-    </section>
+      </Section>
+      <Section n="05" title="Languages" id="languages">
+        <p className="plain">{languages}</p>
+      </Section>
+    </>
   )
 }
