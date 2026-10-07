@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rodrigo-viola.netlify.app'),
+  metadataBase: new URL('https://rodrigo-viola.com'),
   title: 'Rodrigo Viola — GTM Engineer',
   description:
     'I build the systems that replace manual go-to-market work: outbound engines, enrichment layers, and the email infrastructure underneath them.',

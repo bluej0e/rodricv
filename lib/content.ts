@@ -6,7 +6,7 @@ export const profile = {
   email: 'rv.rodrigo.viola@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rodrigoviola/',
   github: 'https://github.com/bluej0e',
-  site: 'https://rodrigo-viola.netlify.app',
+  site: 'https://rodrigo-viola.com',
   pdf: '/Rodrigo_Viola_CV.pdf',
 }
 
