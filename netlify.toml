@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Portfolio: kept out of search engines and AI crawlers (robots.txt and
+# netlify/edge-functions/block-bots.ts do the same job).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai"
